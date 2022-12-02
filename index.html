@@ -8,9 +8,6 @@
   <title>Trans light</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -106,9 +103,24 @@
             </a>
           </div>
           <div class="img">
-            <img src="/assets/img/img1.png" class="img1" alt="картинка оборудования">
-            <img src="/assets/img/img2.png" class="img2" alt="картинка оборудования">
-            <img src="/assets/img/img3.png" class="img3" alt="картинка оборудования">
+            <div class="mini-content2">
+              <img src="/assets/img/img1.png" class="img1" alt="картинка оборудования">
+              <section class="mini-section2">
+                <p class="mini-section2__title title1">Статичные <span>светодиодные приборы</span></p>
+              </section>
+            </div>
+            <div class="mini-content2">
+              <img src="/assets/img/img2.png" class="img2" alt="картинка оборудования">
+              <section class="mini-section2">
+                <p class="mini-section2__title title2">Контроллеры</p>
+              </section>
+            </div>
+            <div class="mini-content2">
+              <img src="/assets/img/img3.png" class="img3" alt="картинка оборудования">
+              <section class="mini-section2">
+                <p class="mini-section2__title title3">Аксессуары</p>
+              </section>
+            </div>
           </div>
         </section>
         <section class="main__section">
@@ -149,12 +161,38 @@
             </svg>
           </div>
           <p class="section-title">Новости</p>
-          <div class="section-btn"><button class="btn-left"><span class="caret-left"></span></button>
-            <button class="btn-right"><span class="caret-right"></span></button>
+          <div class="btn-news">
+            <button class="button__news"><a href="#" class="link-news">Все новости</a></button>
           </div>
-          <div class="mini-img">
-            <img src="/assets/img/mini-img1.png" alt="картинка новостей">
-            <img src="/assets/img/mini-img2.png" alt="картинка новостей">
+          <div class="news-content">
+            <article class="big-article">
+              <img src="/assets/img/article_img.png" alt="картинка большой статьи" class="big-article__img">
+              <div class="article-text">
+                <div class="article-row">
+                  <p class="article-data1">27.01.2019</p>
+                  <p class="big-article__title">Семинар Milos</p>
+                </div>
+                <p class="big-article__subtitle">Наши сотрудники прошли последний семинар от компании Milos.
+                  Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только
+                  мероприятий, но производственных помещений.</p>
+                <p class="big-article__reading">Читать полностью...</p>
+              </div>
+            </article>
+
+            <article class="mini-article">
+              <div class="mini-article1">
+                <p class="mini-title">Выставка Prolight+Sound NAMM Russia 2016</p>
+                <p class="mini-subtitle">30 контрактов, тысячи восторженных посетителей...</p>
+                <img class="mini-img" src="/assets/img/mini-img1.png" alt="картинка новостей">
+                <p class="article-data">27.01.2019</p>
+              </div>
+              <div class="mini-article2">
+                <p class="mini-title">Семинар Robe </p>
+                <p class="mini-subtitle">30 января 2017 года наши сотрудники побывали в Берлине..</p>
+                <img class="mini-img" src="/assets/img/mini-img2.png" alt="картинка новостей">
+                <p class="article-data">27.01.2019</p>
+              </div>
+            </article>
           </div>
         </section>
       </div>
