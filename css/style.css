@@ -34,6 +34,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../assets/fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../assets/fonts/Oswald-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Oswald-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 *,
 *::before,
@@ -164,6 +182,10 @@ a {
 }
 
 .button {
+
+}
+
+.first-screen__btn {
   position: absolute;
   left: 595px;
   top: 548px;
@@ -172,12 +194,8 @@ a {
   height: 51px;
   padding: 15px 40px;
   border: 2px solid #FFFFFF;
-}
 
-.first-screen__btn {
 
-  width: 79px;
-  height: 22px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -186,6 +204,13 @@ a {
   text-align: center;
   letter-spacing: 0.05em;
   color: #FFFFFF;
+
+}
+
+.first-screen__btn:hover {
+  transition: 0.5s;
+  border: 2px solid hotpink;
+  color: hotpink;
 
 }
 
@@ -619,22 +644,29 @@ a {
   color: #FFFFFF;
 }
 
+
+
 .big-article {
-  display: flex;
+  font-family: 'Open Sans', 'Oswald';
   position: absolute;
-  top: 121px;
+  top: 140px;
   left: 0;
+  display: flex;
   width: 540px;
   height: 242px;
 }
 
 .article-text {
-  position: relative;
+  position: absolute;
   top: 0;
-  left: 30px;
+  left: 285px;
+
 }
 
 .big-article__img {
+  position: absolute;
+  top: 0;
+  left: 0;
 
   width: 255px;
   height: 242px;
@@ -642,20 +674,23 @@ a {
 
 .article-data1 {
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 183px;
-
 }
 
 .article-row {
+  position: relative;
+  top: -18px;
+  left: 0;
+  flex-direction: row;
   display: flex;
   align-items: center;
-  flex-direction: row;
-
 }
 
 .article-data,
-.article-data1 {
+.article-data1,
+.article-data-1,
+.article-data-2 {
   width: 72px;
   height: 19px;
 
@@ -674,6 +709,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+
+
   width: 123px;
   height: 27px;
 
@@ -693,18 +730,15 @@ a {
 
 .big-article__subtitle {
   position: absolute;
-  top: 69px;
+  top: 49px;
   left: 0;
   width: 255px;
   height: 133px;
-
-
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-
   color: #343434;
 
 }
@@ -712,8 +746,9 @@ a {
 
 .big-article__reading {
   position: absolute;
-  top: 240px;
-  left: 0;
+  top: 225px;
+  left: 0px;
+
   width: 139px;
   height: 19px;
 
@@ -731,23 +766,34 @@ a {
 .mini-article {
   position: relative;
   top: 121px;
-  left: 415px;
+  left: 430px;
   display: flex;
+  align-items: center;
   width: 510px;
   height: 242px;
+  font-family: 'Oswald', 'Open Sans';
+
 }
 
 .mini-article1 {
-  position: absolute;
+  position: relative;
+  margin-right: 30px;
   width: 225px;
   height: 242px;
 
+}
+
+.mini-article2 {
+  position: relative;
+  width: 225px;
+  height: 242px;
 }
 
 .mini-title {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 225px;
   height: 49px;
 
@@ -765,8 +811,9 @@ a {
 
 .mini-subtitle {
   position: absolute;
-  top: 69px;
+  top: 80px;
   left: 0;
+
   width: 225px;
   height: 38px;
 
@@ -780,29 +827,185 @@ a {
 
 }
 
+.mini-subtitle span {
+  white-space: nowrap;
+}
+
 .mini-img {
   position: absolute;
-  top: 142px;
+  top: 140px;
   left: 0;
   width: 128px;
   height: 115px;
 }
 
-.mini-article2 {
+.article-data-1,
+.article-data-2 {
   position: absolute;
-  top: 0;
-  left: 300px;
-  width: 225px;
-  height: 242px;
-}
-
-.article-data {
-  position: absolute;
-  top: 223px;
-  left: 153px;
+  top: 227px;
+  left: 150px;
 }
 
 .news-content {
   display: flex;
   justify-content: space-between;
+}
+
+/* footer */
+
+.footer {
+  background-color: #005BC1;
+  width: 1920px;
+  height: 255px;
+  position: relative;
+}
+
+.footer__container {
+  position: relative;
+  padding: 40px 405px 25px 405px;
+}
+
+.high-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.high-row__item {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+}
+
+.tel {
+  width: 122px;
+  height: 27px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+}
+
+.adress {
+  width: 610px;
+  height: 19px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.e-mail {
+  width: 127px;
+  height: 19px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: right;
+}
+
+.middle-row {
+  position: relative;
+  display: flex;
+  margin-right: 964px;
+}
+
+.row__line-1 {
+  margin-top: 25px;
+  width: 1110px;
+}
+
+.row__line-2 {
+  margin-top: 105px;
+  width: 1110px;
+}
+
+.middle-row__link {
+  margin-right: 100px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.middle-row-1 {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  justify-content: space-between;
+}
+
+.middle-row-2 {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+
+
+
+.low-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.info1 {
+  position: absolute;
+  width: 315px;
+  height: 19px;
+  left: 0;
+  top: 0;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.info2 {
+  position: absolute;
+  top: 0;
+  left: 910px;
+  white-space: nowrap;
+
+  width: 201px;
+  height: 19px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: right;
+  color: #FFFFFF;
 }
