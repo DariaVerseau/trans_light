@@ -95,8 +95,6 @@ a {
   margin-left: 40px;
 }
 
-.logo-img {}
-
 .row {
   display: flex;
   align-items: center;
@@ -181,10 +179,6 @@ a {
   white-space: nowrap;
 }
 
-.button {
-
-}
-
 .first-screen__btn {
   position: absolute;
   left: 595px;
@@ -254,28 +248,19 @@ a {
 
 .section-btn {
   margin-left: 1002px;
-  position: relative;
+  display: flex;
+  height: 55px;
 }
 
 .btn-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
   width: 55px;
-  height: 55px;
-  border: 2px solid #005BC1;
+
 }
 
 
 .btn-right {
-  position: absolute;
-  top: 0;
-  left: 55px;
-  box-sizing: border-box;
   width: 55px;
-  height: 55px;
-  border: 2px solid #005BC1;
+
 }
 
 .section-img {
@@ -302,8 +287,6 @@ a {
 
 
 }
-
-.mini-img {}
 
 .img {
   display: flex;
@@ -453,8 +436,6 @@ a {
 
 }
 
-.img1 {}
-
 .mini-section2 {
   position: absolute;
   top: 199px;
@@ -487,13 +468,6 @@ a {
 .title3 {
   margin: 30px 21px;
 }
-
-.img2 {}
-
-.img3 {}
-
-
-.section-title {}
 
 .section3-text {
   margin-top: 150px;
@@ -539,27 +513,15 @@ a {
 }
 
 .section3-btn {
-  position: relative;
-  top: 30px;
-  left: 527px;
-
-}
-
-.btn3-left {
-  box-sizing: border-box;
-  width: 55px;
+  margin-left: 537px;
   height: 55px;
-  border: 2px solid #005BC1;
+  display: flex;
+  margin-top: 30px;
 }
 
+.btn3-left,
 .btn3-right {
-  position: absolute;
-  top: 0;
-  left: 55px;
-  box-sizing: border-box;
   width: 55px;
-  height: 55px;
-  border: 2px solid #005BC1;
 }
 
 .model-name {
