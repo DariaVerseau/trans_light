@@ -72,6 +72,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .header {
   background-image: url('/assets/img/background.jpg');
   height: 100vh;
@@ -93,8 +97,6 @@ a {
   padding: 11px 0px;
   margin-left: 40px;
 }
-
-.logo-img {}
 
 .row {
   display: flex;
@@ -131,11 +133,8 @@ a {
 }
 
 .first-screen__content {
-  width: 635px;
-  height: 317px;
   display: flex;
   flex-direction: column;
-
 }
 
 .title {
@@ -144,6 +143,7 @@ a {
 }
 
 .title__text {
+  margin-bottom: 40px;
   color: #fff;
   font-family: 'Oswald';
   font-style: normal;
@@ -151,16 +151,16 @@ a {
   font-size: 48px;
   line-height: 71px;
   letter-spacing: 0.01em;
-
+  width: 635px;
 }
 
 .subtitle {
   margin-left: 595px;
-  margin-bottom: 40px;
   width: 445px;
 }
 
 .subtitle__text {
+  margin-bottom: 40px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -278,17 +278,13 @@ a {
   position: absolute;
   width: 250px;
   height: 110px;
+  padding: 20px 25px;
   top: 255px;
   left: 255px;
   background-color: #fff;
 }
 
 .mini-section__title {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  width: 107px;
-  height: 22px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -298,28 +294,21 @@ a {
   text-transform: uppercase;
   color: #343434;
   white-space: nowrap;
-
+  margin-bottom: 14px;
 }
 
 .mini-section__text {
-  width: 200px;
-  height: 34px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
   color: #343434;
-  position: absolute;
-  top: 36px;
-  left: 25px;
-
 }
 
 .section-btn {
-  position: relative;
-  margin-top: 70px;
-  margin-left: 450px;
+  display: flex;
+  margin-left: 658px;
 }
 
 .btn-1 {
@@ -699,12 +688,9 @@ a {
 .footer {
   background-color: #005BC1;
   width: 1920px;
-  height: 255px;
-  position: relative;
 }
 
 .footer__container {
-  position: relative;
   padding: 40px 405px 25px 405px;
 }
 
@@ -728,14 +714,11 @@ a {
 
 .tel {
   width: 122px;
-  height: 27px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
-
   letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -744,48 +727,36 @@ a {
 
 .adress {
   width: 610px;
-  height: 19px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
-
   text-align: center;
 }
 
 .e-mail {
   width: 127px;
-  height: 19px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
-
   text-align: right;
 }
 
 .middle-row {
-  position: relative;
   display: flex;
-  margin-right: 964px;
+  flex-direction: column;
 }
 
-.row__line-1 {
-  margin-top: 25px;
-  width: 1110px;
-}
-
+.row__line-1,
 .row__line-2 {
-  margin-top: 105px;
-  width: 1110px;
+  width: auto;
+  margin: 25px 0px;
 }
 
 .middle-row__link {
-  margin-right: 100px;
   color: #FFFFFF;
   white-space: nowrap;
   font-family: 'Open Sans';
@@ -795,36 +766,41 @@ a {
   line-height: 19px;
 }
 
+.company {
+  margin-right: 110px;
+}
+
+.catalog {
+  margin-right: 139px;
+}
+
+.news {
+  margin-right: 134px;
+}
+
+.rent {
+  margin-right: 141px;
+}
+
 .middle-row-1 {
   display: flex;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .middle-row-2 {
   display: flex;
-  position: absolute;
-  top: 55px;
-  left: 0;
+  flex-direction: row;
+  margin-bottom: 25px;
 }
 
-
-
 .low-row {
-  position: relative;
   display: flex;
   flex-direction: row;
 }
 
 .info1 {
-  position: absolute;
-  width: 315px;
-  height: 19px;
-  left: 0;
-  top: 0;
-
+  margin: 0;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
@@ -835,20 +811,14 @@ a {
 }
 
 .info2 {
-  position: absolute;
-  top: 0;
-  left: 910px;
+  margin: 0;
   white-space: nowrap;
-
-  width: 201px;
-  height: 19px;
-
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-
   text-align: right;
   color: #FFFFFF;
+  padding-left: 575px;
 }
